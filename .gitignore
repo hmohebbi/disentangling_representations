@@ -1,0 +1,7 @@
+*.out
+*.err
+__pycache__/
+directory
+.vscode*
+*.gz
+*.zip

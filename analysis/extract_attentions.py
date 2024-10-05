@@ -35,7 +35,6 @@ LAYER = LAYER if LAYER == "all" else int(LAYER)
 LEARNING_RATE = float(LEARNING_RATE)
 BETA_S1 = "incremental" 
 BETA_S2 = "incremental" 
-SEED = 42
 SELECTED_GPU = 0
 DATA_PATH = f"{os.environ['HOME']}/Projects/disentanglement_framework/directory/data/"
 LOAD_VIB_PATH = f"{os.environ['HOME']}/Projects/disentanglement_framework/directory/models/vib/"

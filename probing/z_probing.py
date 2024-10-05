@@ -53,8 +53,8 @@ DATA_S2 = DATA_S1 + "_" + DATA_S2
 DATA_ = DATA_S1 if STAGE == "1" else DATA_S2
 DATA_PATH = f"{os.environ['HOME']}/Projects/disentanglement_framework/directory/data/"
 LOAD_VIB_PATH = f"{os.environ['HOME']}/Projects/disentanglement_framework/directory/models/vib/"
-SAVE_REPORTS_PATH = f"{os.environ['HOME']}/Projects/disentanglement_framework/directory/reports/sanity/{OBJECTIVE}/{STAGE}/{DATA_}/{DATA}/{MODEL_NAME}/{SEED}/"
-SAVE_MODEL_PATH = f"{os.environ['HOME']}/Projects/disentanglement_framework/directory/models/sanity/{OBJECTIVE}/{STAGE}/{DATA_}/{DATA}/{MODEL_NAME}/{SEED}/"
+SAVE_REPORTS_PATH = f"{os.environ['HOME']}/Projects/disentanglement_framework/directory/reports/sanity/{OBJECTIVE}/{STAGE}/{DATA_}/{DATA}/{MODEL_NAME}/"
+SAVE_MODEL_PATH = f"{os.environ['HOME']}/Projects/disentanglement_framework/directory/models/sanity/{OBJECTIVE}/{STAGE}/{DATA_}/{DATA}/{MODEL_NAME}/"
 
 ## Imports
 import pickle
@@ -137,7 +137,7 @@ if NO_IB:
 else:
     postfix += f"_b={BETA_S1}"
 postfix += f"_layer={LAYER_S1}"
-stage1_vib.load_state_dict(torch.load(f'{LOAD_VIB_PATH}1/{DATA_S1}/{MODEL_NAME}/{SEED}/model{postfix}.pth', map_location=torch.device(device)))
+stage1_vib.load_state_dict(torch.load(f'{LOAD_VIB_PATH}1/{DATA_S1}/{MODEL_NAME}/model{postfix}.pth', map_location=torch.device(device)))
 stage1_vib.to(device)
 stage1_vib.eval()
 
@@ -158,7 +158,7 @@ if STAGE == "2":
     else:
         postfix += f"_b={BETA_S1}_{BETA_S2}"
     postfix += f"_layer={LAYER_S1}_{LAYER_S2}"
-    stage2_vib.load_state_dict(torch.load(f'{LOAD_VIB_PATH}2/{DATA_S2}/{MODEL_NAME}/{SEED}/model{postfix}.pth', map_location=torch.device(device)))
+    stage2_vib.load_state_dict(torch.load(f'{LOAD_VIB_PATH}2/{DATA_S2}/{MODEL_NAME}/model{postfix}.pth', map_location=torch.device(device)))
     stage2_vib.to(device)
     stage2_vib.eval()
 

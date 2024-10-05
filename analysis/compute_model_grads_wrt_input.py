@@ -21,7 +21,6 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(sys.modules[__name_
 OBJECTIVE = "emotion"
 LAYER = LAYER if LAYER == "all" else int(LAYER)
 LEARNING_RATE = float(LEARNING_RATE)
-SEED = 42
 SELECTED_GPU = 0
 DATA_PATH = f"{os.environ['HOME']}/Projects/disentanglement_framework/directory/data/"
 LOAD_VIB_PATH = f"{os.environ['HOME']}/Projects/disentanglement_framework/directory/models/vib/"

@@ -24,7 +24,7 @@ python vib/training.py --STAGE ["1" or "2"] --LEARNING_RATE [e.g., "0.0001"] --B
 ```
 The disentangled models will be saved to `directory/models/vib`.
 
-The textual latent representations produced in stage 1 are independent of the target task. So, you can load these representations from `directory/models/vib/1/CommonVoice_LibriSpeech/` and use them to directly start your training from stage 2 on new downstream tasks, using the same speech model:
+The textual latent representations produced in stage 1 are independent of the target task. So, you can load the textual encoder from `directory/models/vib/1/CommonVoice_LibriSpeech/` and use them to directly start your training from stage 2 on new downstream tasks, using the same speech model:
 ```
 python vib/training.py --STAGE "2" --LEARNING_RATE "0.0001" --BETA_S1 "incremental" --BETA_S2 "incremental" --DATA_S1 "CommonVoice_LibriSpeech" --DATA_S2 "data_for_stage2" --LATENT_DIM "128" --MODEL_NAME [the same speech model as stage 1] --LAYER_S1 "all" --LAYER_S2 "all" --SEED [e.g., "12"]
 ```

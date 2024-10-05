@@ -13,8 +13,8 @@ SPLIT = args.SPLIT
 # DATA = "IEMOCAP"
 # SPLIT = "test" 
 
-DATA_PATH = f"{os.environ['HOME']}/Projects/disentanglement_framework/directory/data/"
-CORPUS_PATH = f"{os.environ['HOME']}/Projects/disentanglement_framework/directory/mfa/{DATA}/{SPLIT}/"
+DATA_PATH = f"{os.environ['HOME']}/Projects/disentangling_representations/directory/data/"
+CORPUS_PATH = f"{os.environ['HOME']}/Projects/disentangling_representations/directory/mfa/{DATA}/{SPLIT}/"
 
 # imports 
 from tqdm.auto import tqdm

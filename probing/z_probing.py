@@ -51,10 +51,10 @@ MAX_GRAD_NORM = 1
 SELECTED_GPU = 0
 DATA_S2 = DATA_S1 + "_" + DATA_S2
 DATA_ = DATA_S1 if STAGE == "1" else DATA_S2
-DATA_PATH = f"{os.environ['HOME']}/Projects/disentanglement_framework/directory/data/"
-LOAD_VIB_PATH = f"{os.environ['HOME']}/Projects/disentanglement_framework/directory/models/vib/"
-SAVE_REPORTS_PATH = f"{os.environ['HOME']}/Projects/disentanglement_framework/directory/reports/sanity/{OBJECTIVE}/{STAGE}/{DATA_}/{DATA}/{MODEL_NAME}/"
-SAVE_MODEL_PATH = f"{os.environ['HOME']}/Projects/disentanglement_framework/directory/models/sanity/{OBJECTIVE}/{STAGE}/{DATA_}/{DATA}/{MODEL_NAME}/"
+DATA_PATH = f"{os.environ['HOME']}/Projects/disentangling_representations/directory/data/"
+LOAD_VIB_PATH = f"{os.environ['HOME']}/Projects/disentangling_representations/directory/models/vib/"
+SAVE_REPORTS_PATH = f"{os.environ['HOME']}/Projects/disentangling_representations/directory/reports/sanity/{OBJECTIVE}/{STAGE}/{DATA_}/{DATA}/{MODEL_NAME}/"
+SAVE_MODEL_PATH = f"{os.environ['HOME']}/Projects/disentangling_representations/directory/models/sanity/{OBJECTIVE}/{STAGE}/{DATA_}/{DATA}/{MODEL_NAME}/"
 
 ## Imports
 import pickle

@@ -17,9 +17,9 @@ SPLITS = ["test"]
 BATCH_SIZE = 8
 SEED = 42
 SELECTED_GPU = 0
-DATA_PATH = f"{os.environ['HOME']}/Projects/disentanglement_framework/directory/data/"
-LOAD_VIB_PATH = f"{os.environ['HOME']}/Projects/disentanglement_framework/directory/models/vib/"
-SAVE_FIGURES_PATH = f"{os.environ['HOME']}/Projects/disentanglement_framework/directory/figures/"
+DATA_PATH = f"{os.environ['HOME']}/Projects/disentangling_representations/directory/data/"
+LOAD_VIB_PATH = f"{os.environ['HOME']}/Projects/disentangling_representations/directory/models/vib/"
+SAVE_FIGURES_PATH = f"{os.environ['HOME']}/Projects/disentangling_representations/directory/figures/"
 
 ## Imports
 import pickle

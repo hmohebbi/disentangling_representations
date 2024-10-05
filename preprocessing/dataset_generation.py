@@ -1,7 +1,7 @@
 import sys, os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(sys.modules[__name__].__file__), "..")))
 
-SAVE_DATA_PATH = f"{os.environ['HOME']}/Projects/disentanglement_framework/directory/data/"
+SAVE_DATA_PATH = f"{os.environ['HOME']}/Projects/disentangling_representations/directory/data/"
 SEED = 42
 MAX_SECOND = 14.0
 
@@ -88,7 +88,7 @@ def extract_utterance_id(path):
     return path.split('/')[-1][:-4]
 
 iemocap_org_release_path = "/home/anonymized/IEMOCAP_full_release/"
-meta_path = "/home/anonymized/Projects/disentanglement_framework/directory/metadata/"
+meta_path = "/home/anonymized/Projects/disentangling_representations/directory/metadata/"
 iemocap = []
 for session in [1, 2, 3, 4, 5]:
     for split in ['train', 'test']:

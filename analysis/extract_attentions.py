@@ -36,11 +36,11 @@ LEARNING_RATE = float(LEARNING_RATE)
 BETA_S1 = "incremental" 
 BETA_S2 = "incremental" 
 SELECTED_GPU = 0
-DATA_PATH = f"{os.environ['HOME']}/Projects/disentanglement_framework/directory/data/"
-LOAD_VIB_PATH = f"{os.environ['HOME']}/Projects/disentanglement_framework/directory/models/vib/"
-LOAD_PROBE_PATH = f"{os.environ['HOME']}/Projects/disentanglement_framework/directory/models/sanity/{OBJECTIVE}/"
-ALIGNMENT_BASE_PATH = f"{os.environ['HOME']}/Projects/disentanglement_framework/directory/mfa/{DATA}/"
-SAVE_WEIGHTS_PATH = f"{os.environ['HOME']}/Projects/disentanglement_framework/directory/analysis/{OBJECTIVE}/{DATA}/{SPLIT}/{MODEL_NAME}/"
+DATA_PATH = f"{os.environ['HOME']}/Projects/disentangling_representations/directory/data/"
+LOAD_VIB_PATH = f"{os.environ['HOME']}/Projects/disentangling_representations/directory/models/vib/"
+LOAD_PROBE_PATH = f"{os.environ['HOME']}/Projects/disentangling_representations/directory/models/sanity/{OBJECTIVE}/"
+ALIGNMENT_BASE_PATH = f"{os.environ['HOME']}/Projects/disentangling_representations/directory/mfa/{DATA}/"
+SAVE_WEIGHTS_PATH = f"{os.environ['HOME']}/Projects/disentangling_representations/directory/analysis/{OBJECTIVE}/{DATA}/{SPLIT}/{MODEL_NAME}/"
 
 ## Imports
 import pickle

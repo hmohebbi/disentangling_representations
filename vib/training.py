@@ -48,10 +48,10 @@ WEIGHT_DECAY = 0.005
 MAX_GRAD_NORM = 1
 SELECTED_GPU = 0
 DATA_ = DATA_S1 if STAGE == "1" else DATA_S1 + "_" + DATA_S2
-DATA_PATH = f"{os.environ['HOME']}/Projects/disentanglement_framework/directory/data/"
-LOAD_STAGE1_PATH = f"{os.environ['HOME']}/Projects/disentanglement_framework/directory/models/vib/1/{DATA_S1}/{MODEL_NAME}/"
-SAVE_REPORTS_PATH = f"{os.environ['HOME']}/Projects/disentanglement_framework/directory/reports/vib/{STAGE}/{DATA_}/{MODEL_NAME}/"
-SAVE_MODEL_PATH = f"{os.environ['HOME']}/Projects/disentanglement_framework/directory/models/vib/{STAGE}/{DATA_}/{MODEL_NAME}/"
+DATA_PATH = f"{os.environ['HOME']}/Projects/disentangling_representations/directory/data/"
+LOAD_STAGE1_PATH = f"{os.environ['HOME']}/Projects/disentangling_representations/directory/models/vib/1/{DATA_S1}/{MODEL_NAME}/"
+SAVE_REPORTS_PATH = f"{os.environ['HOME']}/Projects/disentangling_representations/directory/reports/vib/{STAGE}/{DATA_}/{MODEL_NAME}/"
+SAVE_MODEL_PATH = f"{os.environ['HOME']}/Projects/disentangling_representations/directory/models/vib/{STAGE}/{DATA_}/{MODEL_NAME}/"
 
 ## Imports
 import pickle

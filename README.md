@@ -32,7 +32,7 @@ python vib/training.py --STAGE "2" --LEARNING_RATE "0.0001" --BETA_S1 "increment
 ### Sanity-check probing
 In the `probing` folder, you will find scripts for evaluating the latent and original representations to verify if they are truly disentangled.
 
-# Localizing salient frames
+### Localizing salient frames
 The `analysis` folder contains code to extract textual and acoustic attention weights trained in the framework. These can be compared with gradient-based feature attribution scores in highlighting the most salient frame representaions.
 
 

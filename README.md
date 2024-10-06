@@ -2,7 +2,7 @@
 
 This official repository contains the code and the model checkpoints for the paper _"Disentangling Textual and Acoustic Features of Neural Speech Representations"_. It proposes a disentanglement framework based on the Information Bottleneck principle, which effectively separates entangled representations of neural speech models into distinct textual and acoustic components. The framework retains only the features relevant to target tasks, improving interpretability while maintaining the model's original performance. The framework is also proving useful in providing a route to perform _disentangled feature attribution_, revealing the most significant speech frame representations from both textual and acoustic perspectives.
 
-📃[[Paper]](https://arxiv.org/abs/???)
+<!-- 📃[[Paper]](https://arxiv.org/abs/???) -->
 
 
 ## Approach
@@ -33,11 +33,11 @@ python vib/training.py --STAGE "2" --LEARNING_RATE "0.0001" --BETA_S1 "increment
 In the `probing` folder, you will find scripts for evaluating the latent and original representations to verify if the latent representations are truly disentangled.
 
 ### Localizing salient frames
-The `analysis` folder contains code to extract textual and acoustic attention weights trained in the framework. These scores can be compared with gradient-based feature attribution scores in highlighting the most salient frame representaions.
+The `analysis` folder contains code to extract textual and acoustic attention weights in stage 2 of the framework. These scores offer deeper insights than gradient-based feature attribution methods by identifying the most salient speech frame representations from both the textual and acoustic perspectives.
 
 
 
-## Citing
+<!-- ## Citing
 ```bibtex
 
-```
+``` -->

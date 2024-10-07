@@ -2,7 +2,7 @@
 
 This official repository contains the code and the model checkpoints for the paper _"Disentangling Textual and Acoustic Features of Neural Speech Representations"_. It proposes a disentanglement framework based on the Information Bottleneck principle, which effectively separates entangled representations of neural speech models into distinct textual and acoustic components. The framework retains only the features relevant to target tasks, improving interpretability while maintaining the model's original performance. The framework is also proving useful in providing a route to perform _disentangled feature attribution_, revealing the most significant speech frame representations from both textual and acoustic perspectives.
 
-<!-- 📃[[Paper]](https://arxiv.org/abs/???) -->
+📃[[Paper]](https://arxiv.org/abs/2410.03037)
 
 
 ## Approach
@@ -37,7 +37,14 @@ The `analysis` folder contains code to extract textual and acoustic attention we
 
 
 
-<!-- ## Citing
+## Citing
 ```bibtex
-
-``` -->
+@misc{mohebbi2024disentangling,
+    title={Disentangling Textual and Acoustic Features of Neural Speech Representations},
+    author={Hosein Mohebbi and Grzegorz Chrupała and Willem Zuidema and Afra Alishahi and Ivan Titov},
+    year={2024},
+    eprint={2410.03037},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+```
